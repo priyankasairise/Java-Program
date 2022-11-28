@@ -1,15 +1,15 @@
 package InterfaceTest;
-interface Bank{
+/*interface Bank{
 void provideLoanInfo();
 }
-class Axis implements Bank{
+class Axis {
 
     @Override
     public void provideLoanInfo() {
     System.out.println("Axis bank Provides loan @15.00 ROI");
     }
 }
-class SBI implements Bank{
+class SBI {
 
     @Override
     public void provideLoanInfo() {
@@ -19,13 +19,15 @@ System.out.println("SBI Bank provides loan @20.00 ROI");
 
 
 public class AccountHolder {
+    private Axis applyloan;
+
     public void applyloan(Bank bank){
         bank.provideLoanInfo();
     }
     public static void main(String[] args) {
         AccountHolder ah = new AccountHolder();
-        ah.applyloan(new Axis());  //calling method
-        ah.applyloan(new SBI());
+        ah.applyloan= new Axis();  //calling method
+        ah.applyloan=new SBI();
 
         //Annonymous inner class
         ah.applyloan(new Bank() {
@@ -52,8 +54,8 @@ public class AccountHolder {
             System.out.println("HSBC bank provides loan @30.00 ROI");
         };
         hsbc.provideLoanInfo();
-
-    }
-
-
 }
+    }*/
+
+
+

@@ -4,16 +4,21 @@ import java.util.Scanner;
 
 public class gmail {
     public static void main(String[] args) {
-        Scanner sc= new Scanner(System.in);
+        String s1="priyankasairise@gamil.com";
+        String s2="priyankasairise@yahoo.com";
 
-        System.out.println("Enter your Mail ID:");
-        String email=sc.nextLine();
+       String substring1=s1.substring(21,30);
+       System.out.println(substring1);
 
-//        String domain=email.substring(email.indexOf("@")+1);
-//        System.out.println(domain);
+       String substring2=s2.substring(21,30);
+        System.out.println(substring2);
 
-
-
+        if(substring1.equals((substring2))){
+            System.out.println("Domain of strings are same ");
+        }
+        else{
+            System.out.println("Domain of both strings are not same");
+        }
     }
 
 }
